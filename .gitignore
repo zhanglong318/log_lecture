@@ -1,0 +1,52 @@
+# maven ignore
+target/
+
+# gradle ignore
+.gradle/
+out/
+build/
+
+# eclipse ignore
+.settings/
+.project
+.classpath
+classes/
+
+# idea ignore
+.idea/
+*.ipr
+*.iml
+*.iws
+
+# temp ignore
+*.log*
+*.cache
+*.diff
+*.patch
+*.tmp
+*.swp
+
+# system ignore
+.DS_Store
+Thumbs.db
+hs_err_pid*
+
+# gradle module ignore
+hanukkah-*/*.ipr
+hanukkah-*/*.iml
+hanukkah-*/*.iws
+hanukkah-*/.DS_Store
+hanukkah-*/target/
+hanukkah-*/*.swp
+hanukkah-*/build/
+hanukkah-*/.project
+hanukkah-*/.classpath
+hanukkah-*/.settings
+hanukkah-*/*.log*
+hanukkah-*/hs_err_pid*
+hanukkah-*/classes/
+hanukkah-*/Thumbs.db
+
+# sass ignore
+.sass-cache/
+*.css.map
