@@ -33,7 +33,8 @@ dependencies {
             'ch.qos.logback:logback-core:1.1.6',
             'ch.qos.logback:logback-classic:1.1.6',
             'ch.qos.logback:logback-access:1.1.6',
-            'ch.qos.logback:logback-examples:1.1.6'
+            'ch.qos.logback:logback-examples:1.1.6',
+            'commons-logging:commons-logging:1.2'
     )
 }
 
