@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration debug="off" monitorInterval="1800">
+
+    <Properties>
+        <Property name="logPath">/Users/zhanglong/log_lecture/log4j_test/logs</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %class{36}.%M()/%L  - %msg%xEx%n"/>
+        </Console>
+
+        <File name="my_debug" fileName="${logPath}/debug.log" append="true">
+            <Filters>
+                <ThresholdFilter level="info" onMatch="DENY" onMismatch="NEUTRAL"/>
+                <ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="NEUTRAL"/>
+            </Filters>
+            <PatternLayout pattern="%d{yyyy.MM.dd HH:mm:ss z} %-5level %class{36}.%M()/%L - %msg%xEx%n"/>
+        </File>
+        <File name="my_info" fileName="${logPath}/info.log" append="true">
+            <Filters>
+                <ThresholdFilter level="warn" onMatch="DENY" onMismatch="NEUTRAL"/>
+                <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+
+            <PatternLayout pattern="%d{yyyy.MM.dd HH:mm:ss z} %-5level %class{36}.%M()/%L - %msg%xEx%n"/>
+        </File>
+        <File name="my_error" fileName="${logPath}/error.log" append="true">
+            <Filters>
+                <ThresholdFilter level="warn" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+            <PatternLayout pattern="%d{yyyy.MM.dd HH:mm:ss z} %-5level %class{36}.%M()/%L - %msg%xEx%n"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.test6.log4j2" level="trace" additivity="false">
+            <appender-ref ref="Console"/>
+            <appender-ref ref="my_debug"/>
+            <appender-ref ref="my_info"/>
+            <appender-ref ref="my_error"/>
+        </Logger>
+    </Loggers>
+</configuration>

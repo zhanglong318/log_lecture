@@ -9,7 +9,7 @@ public class Test2 {
         Logger logger = Logger.getLogger(Test2.class);
 
         if(logger.isInfoEnabled()) {
-            logger.info("my log4j test");
+            logger.info("my log4j2 test");
         }
 
     }

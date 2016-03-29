@@ -25,7 +25,15 @@ repositories {
 
 dependencies {
     compile(
-            'log4j:log4j:1.2.17'
+            'log4j:log4j:1.2.17',
+            'org.apache.logging.log4j:log4j:2.5',
+            'org.apache.logging.log4j:log4j-api:2.5',
+            'org.apache.logging.log4j:log4j-core:2.5',
+            'com.lmax:disruptor:3.3.4',
+            'ch.qos.logback:logback-core:1.1.6',
+            'ch.qos.logback:logback-classic:1.1.6',
+            'ch.qos.logback:logback-access:1.1.6',
+            'ch.qos.logback:logback-examples:1.1.6'
     )
 }
 
