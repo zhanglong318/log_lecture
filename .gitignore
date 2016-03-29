@@ -20,6 +20,9 @@ classes/
 
 # temp ignore
 log/
+async/
+logback/
+logs/
 *.cache
 *.diff
 *.patch
