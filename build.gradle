@@ -39,7 +39,8 @@ dependencies {
             "org.apache.flume:flume-ng-clients:1.6.0",
             "org.apache.flume:flume-ng-sources:1.6.0",
             "org.apache.flume:flume-ng-configuration:1.6.0",
-            "org.apache.flume:flume-ng-core:1.6.0"
+            "org.apache.flume:flume-ng-core:1.6.0",
+            "org.apache.zookeeper:zookeeper:3.4.6"
     )
 }
 
