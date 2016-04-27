@@ -34,7 +34,12 @@ dependencies {
             'ch.qos.logback:logback-classic:1.1.6',
             'ch.qos.logback:logback-access:1.1.6',
             'ch.qos.logback:logback-examples:1.1.6',
-            'commons-logging:commons-logging:1.2'
+            'commons-logging:commons-logging:1.2',
+            "org.apache.thrift:libthrift:0.9.2",
+            "org.apache.flume:flume-ng-clients:1.6.0",
+            "org.apache.flume:flume-ng-sources:1.6.0",
+            "org.apache.flume:flume-ng-configuration:1.6.0",
+            "org.apache.flume:flume-ng-core:1.6.0"
     )
 }
 
