@@ -45,6 +45,5 @@ public class ZooKeeperTest {
         zooKeeper.delete("/RootNode", -1);//删除“/RootNode”目录节点
 
         zooKeeper.close(); //关闭与ZooKeeper的连接
-
     }
 }
